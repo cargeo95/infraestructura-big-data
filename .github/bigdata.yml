@@ -1,0 +1,37 @@
+# .github/workflows/bigdata.yml
+
+name: ingesta-big-data
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  ingesta:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: pip install requests pandas openpyxl
+
+      - name: Ejecutar ingesta
+        run: python src/ingestion.py
+
+      - name: Subir artefactos
+        uses: actions/upload-artifact@v3
+        with:
+          name: evidencias-ingesta
+          path: |
+            src/db/ingestion.db
+            src/xlsx/ingestion.xlsx
+            src/static/auditoria/ingestion.txt
