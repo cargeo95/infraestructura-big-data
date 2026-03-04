@@ -1,5 +1,3 @@
-# .github/workflows/bigdata.yml
-
 name: ingesta-big-data
 
 on:
