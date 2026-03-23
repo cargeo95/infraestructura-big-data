@@ -1,0 +1,31 @@
+============================================================
+REPORTE DE LIMPIEZA DE DATOS - 2026-03-22 20:44:23
+============================================================
+Fuente           : src/db/ingestion.db (tabla: hechos)
+
+--- ESTADO ANTES DE LA LIMPIEZA ---
+Registros totales    : 629905
+Duplicados detectados: 0
+Valores nulos por columna:
+  id             : 0
+  fecha_hecho    : 0
+  cod_depto      : 0
+  departamento   : 0
+  cod_muni       : 0
+  municipio      : 0
+  cantidad       : 0
+
+--- OPERACIONES REALIZADAS ---
+[1] Eliminacion de duplicados  : 0 registros eliminados
+[2] Correccion de tipos        : fecha_hecho->timestamp | cantidad->integer | cod_depto/cod_muni->string trimmed
+[3a] Nulos en fecha_hecho      : 0 registros eliminados
+[3b] Imputacion categoricos    : departamento/municipio -> 'DESCONOCIDO' | cod_depto -> '00' | cod_muni -> '00000'
+[3c] Imputacion cantidad       : nulos -> 0
+[4]  Normalizacion texto       : departamento y municipio en mayusculas sin espacios
+
+--- ESTADO DESPUES DE LA LIMPIEZA ---
+Registros finales    : 629905
+Registros eliminados : 0
+
+Estado: LIMPIEZA COMPLETADA EXITOSAMENTE
+============================================================

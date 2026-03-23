@@ -12,5 +12,6 @@ setup(
         "requests",
         "pandas",
         "openpyxl",
+        "pyspark",
     ],
 )

@@ -14,22 +14,33 @@ jobs:
       - name: Clonar repositorio
         uses: actions/checkout@v3
 
+      - name: Configurar Java (requerido por PySpark)
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: "11"
+
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
       - name: Instalar dependencias
-        run: pip install requests pandas openpyxl
+        run: pip install requests pandas openpyxl pyspark
 
       - name: Ejecutar ingesta
         run: python src/ingestion.py
 
+      - name: Ejecutar limpieza
+        run: python src/cleaning.py
+
       - name: Subir artefactos
         uses: actions/upload-artifact@v4
         with:
-          name: evidencias-ingesta
+          name: evidencias-ingesta-limpieza
           path: |
             src/db/ingestion.db
             src/xlsx/ingestion.xlsx
+            src/xlsx/cleaned_data.xlsx
             src/static/auditoria/ingestion.txt
+            src/static/auditoria/cleaning_report.txt
