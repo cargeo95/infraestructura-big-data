@@ -26,7 +26,7 @@ jobs:
           python-version: "3.11"
 
       - name: Instalar dependencias
-        run: pip install requests pandas openpyxl pyspark
+        run: pip install requests pandas openpyxl pyspark lxml html5lib beautifulsoup4
 
       - name: Ejecutar ingesta
         run: python src/ingestion.py
@@ -34,13 +34,18 @@ jobs:
       - name: Ejecutar limpieza
         run: python src/cleaning.py
 
+      - name: Ejecutar enriquecimiento
+        run: python src/enrichment.py
+
       - name: Subir artefactos
         uses: actions/upload-artifact@v4
         with:
-          name: evidencias-ingesta-limpieza
+          name: evidencias-ingesta-limpieza-enriquecimiento
           path: |
             src/db/ingestion.db
             src/xlsx/ingestion.xlsx
             src/xlsx/cleaned_data.xlsx
+            src/xlsx/enriched_data.xlsx
             src/static/auditoria/ingestion.txt
             src/static/auditoria/cleaning_report.txt
+            src/static/auditoria/enrichment_report.txt

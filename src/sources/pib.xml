@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<departamentos>
+  <departamento><cod_depto>5</cod_depto><nombre>ANTIOQUIA</nombre><pib_percapita_cop>27814000</pib_percapita_cop><pib_total_millones_cop>188752000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>8</cod_depto><nombre>ATLANTICO</nombre><pib_percapita_cop>21305000</pib_percapita_cop><pib_total_millones_cop>57996000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>11</cod_depto><nombre>BOGOTA D.C.</nombre><pib_percapita_cop>40127000</pib_percapita_cop><pib_total_millones_cop>297412000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>13</cod_depto><nombre>BOLIVAR</nombre><pib_percapita_cop>18432000</pib_percapita_cop><pib_total_millones_cop>42373000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>15</cod_depto><nombre>BOYACA</nombre><pib_percapita_cop>20115000</pib_percapita_cop><pib_total_millones_cop>24942000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>17</cod_depto><nombre>CALDAS</nombre><pib_percapita_cop>18976000</pib_percapita_cop><pib_total_millones_cop>19025000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>18</cod_depto><nombre>CAQUETA</nombre><pib_percapita_cop>9842000</pib_percapita_cop><pib_total_millones_cop>4173000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>19</cod_depto><nombre>CAUCA</nombre><pib_percapita_cop>10231000</pib_percapita_cop><pib_total_millones_cop>15387000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>20</cod_depto><nombre>CESAR</nombre><pib_percapita_cop>15643000</pib_percapita_cop><pib_total_millones_cop>17483000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>23</cod_depto><nombre>CORDOBA</nombre><pib_percapita_cop>11274000</pib_percapita_cop><pib_total_millones_cop>20694000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>25</cod_depto><nombre>CUNDINAMARCA</nombre><pib_percapita_cop>28543000</pib_percapita_cop><pib_total_millones_cop>96174000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>27</cod_depto><nombre>CHOCO</nombre><pib_percapita_cop>7315000</pib_percapita_cop><pib_total_millones_cop>4003000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>41</cod_depto><nombre>HUILA</nombre><pib_percapita_cop>16821000</pib_percapita_cop><pib_total_millones_cop>20228000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>44</cod_depto><nombre>LA GUAJIRA</nombre><pib_percapita_cop>19752000</pib_percapita_cop><pib_total_millones_cop>20197000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>47</cod_depto><nombre>MAGDALENA</nombre><pib_percapita_cop>12384000</pib_percapita_cop><pib_total_millones_cop>17659000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>50</cod_depto><nombre>META</nombre><pib_percapita_cop>31476000</pib_percapita_cop><pib_total_millones_cop>34665000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>52</cod_depto><nombre>NARIÑO</nombre><pib_percapita_cop>9563000</pib_percapita_cop><pib_total_millones_cop>17055000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>54</cod_depto><nombre>NORTE DE SANTANDER</nombre><pib_percapita_cop>14217000</pib_percapita_cop><pib_total_millones_cop>23174000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>63</cod_depto><nombre>QUINDIO</nombre><pib_percapita_cop>16934000</pib_percapita_cop><pib_total_millones_cop>9574000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>66</cod_depto><nombre>RISARALDA</nombre><pib_percapita_cop>19847000</pib_percapita_cop><pib_total_millones_cop>19642000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>68</cod_depto><nombre>SANTANDER</nombre><pib_percapita_cop>29341000</pib_percapita_cop><pib_total_millones_cop>67414000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>70</cod_depto><nombre>SUCRE</nombre><pib_percapita_cop>10874000</pib_percapita_cop><pib_total_millones_cop>10646000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>73</cod_depto><nombre>TOLIMA</nombre><pib_percapita_cop>14563000</pib_percapita_cop><pib_total_millones_cop>20664000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>76</cod_depto><nombre>VALLE DEL CAUCA</nombre><pib_percapita_cop>25318000</pib_percapita_cop><pib_total_millones_cop>119883000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>81</cod_depto><nombre>ARAUCA</nombre><pib_percapita_cop>22541000</pib_percapita_cop><pib_total_millones_cop>6817000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>85</cod_depto><nombre>CASANARE</nombre><pib_percapita_cop>55432000</pib_percapita_cop><pib_total_millones_cop>25229000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>86</cod_depto><nombre>PUTUMAYO</nombre><pib_percapita_cop>12765000</pib_percapita_cop><pib_total_millones_cop>4610000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>88</cod_depto><nombre>SAN ANDRES ISLAS</nombre><pib_percapita_cop>23174000</pib_percapita_cop><pib_total_millones_cop>1847000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>91</cod_depto><nombre>AMAZONAS</nombre><pib_percapita_cop>8943000</pib_percapita_cop><pib_total_millones_cop>756000</pib_total_millones_cop></departamento>
+  <departamento><cod_depto>94</cod_depto><nombre>GUAINIA</nombre><pib_percapita_cop>7214000</pib_percapita_cop><pib_total_millones_cop>368000</pib_total_millones_cop></departamento>
+</departamentos>

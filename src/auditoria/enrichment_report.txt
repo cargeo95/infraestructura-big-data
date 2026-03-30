@@ -1,0 +1,43 @@
+=================================================================
+REPORTE DE ENRIQUECIMIENTO DE DATOS - 2026-03-29 22:04:39
+=================================================================
+
+--- FUENTES ADICIONALES INTEGRADAS ---
+  poblacion.csv  (CSV)               : 30 registros
+  categorias.json (JSON)             : 30 registros
+  regiones.txt   (TXT)               : 30 registros
+  pib.xml        (XML)               : 30 registros
+  desempleo.html (HTML)              : 30 registros
+
+--- REGISTROS COINCIDENTES POR FUENTE (left join sobre cod_depto) ---
+  poblacion.csv   (poblacion_2023): 1000 / 1000
+  categorias.json (categoria_departamento): 1000 / 1000
+  regiones.txt    (region): 1000 / 1000
+  pib.xml         (pib_percapita_cop): 1000 / 1000
+  desempleo.html  (tasa_desempleo_pct): 1000 / 1000
+
+--- COLUMNAS NUEVAS INCORPORADAS ---
+  + poblacion_2023
+  + categoria_departamento
+  + num_municipios
+  + region
+  + pib_percapita_cop
+  + pib_total_millones_cop
+  + tasa_desempleo_pct
+  + poblacion_ocupada
+  + hurtos_por_100k
+
+--- TRANSFORMACIONES APLICADAS ---
+  [1] cod_depto casteado a IntegerType en todas las fuentes
+  [2] Left join sucesivo por cod_depto (5 fuentes)
+  [3] Columna derivada: hurtos_por_100k = (cantidad / poblacion_2023) * 100000
+
+--- RESUMEN ---
+  Registros dataset base     : 1000
+  Registros dataset enriquec.: 1000
+  Columnas base              : 7
+  Columnas tras enriquec.    : 16
+  Muestra exportada (xlsx)   : 1000 registros
+
+  Estado: ENRIQUECIMIENTO COMPLETADO EXITOSAMENTE
+=================================================================
